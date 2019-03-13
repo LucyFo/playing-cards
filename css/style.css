@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: x-small;
+    background-color: rgb(85, 133, 23);
+    color: #000000;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+p {
+    font-style: italic;
+}
+
+img {    
+    width: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    display: block;
+}
+
+h1 {
+    padding-top: 45px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: small;
+}
+
+h2 {
+    margin-bottom: 0em;
+}
+
+h2 {
+    margin-bottom: 0em;
+}
+
+h3 {
+    margin-bottom: 0em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 120px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card:hover .back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(360deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+
+}
+
+/* .front {
+    transform: rotateY(180deg);
+} */
+
+.back {
+    width: 120px;
+    height: 180px;
+    padding: 10px;
+    margin: 10px;
+    border: 0px solid black;
+    background: url('../images/MFA6AY.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+.outline {
+
+    width: 120px;
+    height: 180px;
+    border: 0px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: #FFF;
+    color: rgb(228, 27, 17);
+
+}
+
+.top {
+    text-align: left;
+}
+
+.bottom {
+    text-align: right;
+}
+
+.shadow {
+    box-shadow: 1px 1px 3px #000;
+}
+
+.rounded {
+    border-radius: 10px;
+
+}
+
+
+.small {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: xx-small;
+}
+
+#big {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 860px) {
+    .table {
+        flex-wrap: nowrap;
+        padding: 0 45px;
+    }
+}
